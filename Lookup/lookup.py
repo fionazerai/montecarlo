@@ -186,8 +186,8 @@ def runCUDA(uncertainty_runs):
         R_d_filename   = "Diffuse_Reflectance.csv" 
         T_d_filename  = "Diffuse_Transmittance.csv"
 
-        R_d_data    = np.genfromtxt(R_d_filename,dtype=None,encoding=None,delimiter=",", invalid_raise=False)[2:,2:]
-        T_d_data   = np.genfromtxt(T_d_filename,dtype=None,encoding=None,delimiter=",", invalid_raise=False)[2:,2:]
+        R_d_data    = np.genfromtxt(R_d_filename,dtype=None,delimiter=",", invalid_raise=False)[2:,2:]
+        T_d_data   = np.genfromtxt(T_d_filename,dtype=None,delimiter=",", invalid_raise=False)[2:,2:]
 
         x,y = np.shape(R_d_data)
 
